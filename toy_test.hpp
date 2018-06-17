@@ -11,8 +11,8 @@
  */
 
 #pragma once
-#ifndef TESTING_HPP_INCLUDED
-#define TESTING_HPP_INCLUDED
+#ifndef TOY_TEST_HPP_INCLUDED
+#define TOY_TEST_HPP_INCLUDED
 
 #include <functional>
 #include <initializer_list>
@@ -103,4 +103,4 @@ namespace toy_test {
          {"THROWS(" #expression ", " #exception ")", __LINE__} ); \
    }
 } // namespace toy_test
-#endif // TESTING_HPP_INCLUDED
+#endif // TOY_TEST_HPP_INCLUDED

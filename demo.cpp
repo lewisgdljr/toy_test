@@ -12,7 +12,7 @@
 
 #include "factorial.hpp"
 #include "leap_year.hpp"
-#include "testing.hpp"
+#include "toy_test.hpp"
 
 toy_test::suite leap_year_suite{
    "Test for leap year formula",
@@ -40,4 +40,8 @@ toy_test::suite factorial_suite{
       {"10! == 3628800", [] { ASSERT( factorial( 10 ) == 3628800 ); }},
    }};
 
-int main() { toy_test::run_suites( {leap_year_suite, factorial_suite} ); }
+int main() {
+  toy_test::run_suites( {leap_year_suite, factorial_suite} );
+  // to get 100% coverage in toy_test, too!
+  toy_test::run_suites( {factorial_suite} );
+}

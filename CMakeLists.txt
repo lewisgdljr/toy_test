@@ -27,7 +27,7 @@ ADD_CUSTOM_TARGET(
     DEPENDS test_demo
     COMMAND lcov -q -c -d ${PROJECT_SOURCE_DIR} --no-external --rc lcov_branch_coverage=1 -o coverage.info
     COMMAND lcov -q -a base.info -a coverage.info --rc lcov_branch_coverage=1 -o temp-coverage.info
-    COMMAND lcov -q -r temp-coverage.info "*/testing.hpp" "*/demo.cpp" --rc lcov_branch_coverage=1 -o coverage.info
+    COMMAND lcov -q -r temp-coverage.info "*/demo.cpp" --rc lcov_branch_coverage=1 -o coverage.info
     COMMAND rm base.info temp-coverage.info
     COMMAND ${PROJECT_SOURCE_DIR}/filter-coverage coverage.info
     )
