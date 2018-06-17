@@ -41,7 +41,7 @@ toy_test::suite factorial_suite{
    }};
 
 int main() {
-  toy_test::run_suites( {leap_year_suite, factorial_suite} );
-  // to get 100% coverage in toy_test, too!
-  toy_test::run_suites( {factorial_suite} );
+   toy_test::run_suites( {leap_year_suite, factorial_suite} );
+   // to get 100% coverage in toy_test, too!
+   toy_test::run_suites( {factorial_suite} );
 }
