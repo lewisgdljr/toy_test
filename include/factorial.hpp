@@ -10,6 +10,10 @@
  * <http://creativecommons.org/publicdomain/zero/1.0/>.
  */
 
+//># `int factorial(int n)`
+//>A simple version of the factorial function.
+//>Caveat: Does not perform error checks!
+//>
 int factorial( int n ) {
    if ( n < 1 )
       return 1;
