@@ -8,17 +8,7 @@ pages of code.
 To compile under Linux or Cygwin:
 
 ```bash
-mkdir build
-cd build
-cmake .. && make test
-```
-
-To do this under mingw-w64/msys2, you need to change the commands to:
-
-```bash
-mkdir build
-cd build
-cmake .. -G'Unix Makefiles' && make test
+make test
 ```
 
 To create a test suite, you do something like this:
@@ -47,7 +37,7 @@ THROWS(exp, exception_name); // checks to make sure that exception_name
  	    		     // is thrown when exp is evaluated
 ```
 
-See demo.cpp, leap_year.hpp, and factorial.hpp for examples.
+See the test directory for examples.
 
 ## License ![CC0](https://licensebuttons.net/p/zero/1.0/88x31.png)
 
